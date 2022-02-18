@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37a83c99-aee4-4489-8b75-2c76f35556e7" name="Changes" comment="adding workspace.xml" />
+    <list default="true" id="37a83c99-aee4-4489-8b75-2c76f35556e7" name="Changes" comment="adding workspace.xml">
+      <change afterPath="$PROJECT_DIR$/js/index/modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/37c25801-f5ef-4937-b4be-0026dcfa2f03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/37c25801-f5ef-4937-b4be-0026dcfa2f03.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -134,7 +140,8 @@
       <workItem from="1644870341669" duration="4000" />
       <workItem from="1644919230839" duration="32000" />
       <workItem from="1644942469288" duration="8795000" />
-      <workItem from="1645022719555" duration="2740000" />
+      <workItem from="1645022719555" duration="15764000" />
+      <workItem from="1645116088115" duration="1194000" />
     </task>
     <task id="LOCAL-00001" summary="adding workspace.xml">
       <created>1645027193117</created>

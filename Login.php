@@ -6,11 +6,14 @@ session_start();
 <?php
 require 'vendor/autoload.php';
 
-$fb = new Facebook\Facebook ([
+try {
+    $fb = new Facebook\Facebook ([
         'app_id' => '1839782052879775',
         'app_secret' => 'e60ad3be80e5d91349a00c60a67766fd',
-        'default_graph_version' => 'v2.10'
-]);
+        'default_graph_version' => 'v5.1'
+    ]);
+} catch (\Facebook\Exceptions\FacebookSDKException $e) {
+}
 $helper = $fb->getRedirectLoginHelper();
 $login_url = $helper->getLoginurl("http://localhost/WebstormProjects/WallpaperSite/Login.php");
 try {

@@ -154,21 +154,23 @@ if ($db -> connect_errno) {
 
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLongTitle">WallpaperHD</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal()">
                               <span aria-hidden="true">&times;</span>
                             </button>
                           </div>
                           <div class="modal-body">
-                            <b>Thanks for downloading from our website!!!</b>
+                              <a>
+                                  <img src="" id="modal-image" style="width: 100%; height: auto; max-height: 1080px; max-width: 1920px;">
+                              </a>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <a href=".$image." download>
-                            <button type="button" class="btn btn-primary">Download</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeModal()">Close</button>
+                            <a id="downlaod" href="" target="_blank" download>
+                            <button class="btn btn-primary">Download</button>
                             </a>
                           </div>
                         </div>
@@ -185,11 +187,15 @@ if ($db -> connect_errno) {
                         $image = $row['name'];
                         $image_alt = $row['alt'];
                         echo '<div class="col-md-3 images" data-class="space">
-                    <img class="modal-body" data-tags="atlantis" src='.$image.'  data-alt='.$image_alt.' alt='.$image_alt.' loading="lazy">
+                    <img class="modal-body"  data-tags="atlantis" src='.$image.'  data-alt='.$image_alt.' alt='.$image_alt.'>
                     <div style="height:20%">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="vertical-align:center">
+                        <button type="button" class="btn btn-primary btn-modal-open"  onclick="getImage()" style="vertical-align:center">
                         Download
                         </button>
+                        <!--button type="button" class="btn btn-primary mod
+                        al-open"  data-toggle="modal" data-target="#exampleModalCenter" onclick="getImage()" style="vertical-align:center">
+                        Download
+                        </button-->
                     </div>
                     </div>';
                         $i--;
@@ -315,6 +321,7 @@ if ($db -> connect_errno) {
 <script src="js/index/footer/popper.js"></script>
 <script src="js/index/footer/bootstrap.min.js"></script>
 <script src="js/index/footer/main.js"></script>
+<script src="js/index/modal.js"></script>
 
 <!--modal box scripts-->
 <script src="js/index/main.js"></script>
