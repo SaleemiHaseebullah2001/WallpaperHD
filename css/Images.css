@@ -4,7 +4,65 @@
 
 .column {
     flex: 33.33%;
-    padding: 5px;
-    padding-top: 20px;
+    padding: 20px 5px 5px;
 }
-/*Model Box */
+.zoom {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.zoom img {
+    vertical-align: top;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.zoom:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*.zoom {*/
+/*    padding: 50px;*/
+/*    transition: transform .5s;*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.zoom:hover {*/
+/*    -ms-transform: scale(1.5); !* IE 9 *!*/
+/*    -webkit-transform: scale(1.5); !* Safari 3-8 *!*/
+/*    transform: scale(1.1);*/
+/*}*/
+/*Overlay*/
+/* Container needed to position the overlay. Adjust the width as needed */
+.container-lg {
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+}
+
+/* Make the image to responsive */
+.image {
+    width: 100%;
+    height: auto;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container-lg:hover {
+    opacity: 1;
+}
+@media(min-width: 768px){
+    .col-md-3{
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 30%;
+}
+}

@@ -69,22 +69,7 @@ if (isset($_SESSION['access_token'])) {
         </button>
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
-            <div class="navbar-nav">
-                <a href="index.php" class="nav-item nav-link">Home</a>
-                <a href="About.php" class="nav-item nav-link">About</a>
-                <div class="nav-item dropdown">
-                    <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Categories</a>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Web Design</a>
-                        <a href="#" class="dropdown-item">Web Development</a>
-                        <a href="#" class="dropdown-item">Graphic Design</a>
-                        <a href="#" class="dropdown-item">Digital Marketing</a>
-                    </div>
-                </div>
-                <a href="TOS.php" class="nav-item nav-link">Terms</a>
-                <a href="#" class="nav-item nav-link">Blog</a>
-                <a href="ContactUs.php" class="nav-item nav-link">Contact</a>
-            </div>
+            
             <form class="navbar-form form-inline">
                 <div class="input-group search-box search">
                     <input type="text" id="searchItem" class="form-control searchItem" placeholder="Search here...">
@@ -164,14 +149,14 @@ if (isset($_SESSION['access_token'])) {
                             <input type="submit" name="signin" id="signin" class="form-submit" value="Log in"/>
                         </div>
                     </form>
-                    <div class="social-login">
-                        <span class="social-label">Or login with</span>
-                        <ul class="socials">
-                            <li><a href="<?php echo $login_url; ?>"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
-                            <li><a href="Login.php?provider=Twitter"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
-                            <li><a href="Login.php?provider=Google"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
-                        </ul>
-                    </div>
+<!--                    <div class="social-login">-->
+<!--                        <span class="social-label">Or login with</span>-->
+<!--                        <ul class="socials">-->
+<!--                            <li><a href="--><?php //echo $login_url; ?><!--"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>-->
+<!--                            <li><a href="Login.php?provider=Twitter"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>-->
+<!--                            <li><a href="Login.php?provider=Google"><i class="display-flex-center zmdi zmdi-google"></i></a></li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>

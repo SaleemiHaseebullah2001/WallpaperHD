@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37a83c99-aee4-4489-8b75-2c76f35556e7" name="Changes" comment="adding workspace.xml">
-      <change afterPath="$PROJECT_DIR$/js/index/modal.js" afterDir="false" />
+    <list default="true" id="37a83c99-aee4-4489-8b75-2c76f35556e7" name="Changes" comment="added modal.js&#10;changes to index.php and Login.php&#10;Overall improved website performance">
+      <change afterPath="$PROJECT_DIR$/ChangePwFromProfile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/modal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/myaccount.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myaccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WallpaperSite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WallpaperSite.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/37c25801-f5ef-4937-b4be-0026dcfa2f03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/37c25801-f5ef-4937-b4be-0026dcfa2f03.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/About.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactUs.php" beforeDir="false" afterPath="$PROJECT_DIR$/ContactUs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ForgotPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/ForgotPassword.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResetPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/ResetPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SaveAllImages.php" beforeDir="false" afterPath="$PROJECT_DIR$/SaveAllImages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SignUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TOS.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Images.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Images.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/footer-style/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/footer-style/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index/Images.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index/Images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index/modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Errors.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Errors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/common/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/layouts/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layouts/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/welcome.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +49,7 @@
         <option value="HTML File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -47,23 +74,29 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
   <component name="ProjectId" id="21P5VS6HkbyucjqZpnqU7DPb0qz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql&#10;mariadb" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -71,11 +104,11 @@
       <recent name="C:\xampp\htdocs\WebstormProjects\WallpaperSite" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\PhpstormProjects\WallpaperSite" />
+      <recent name="C:\xampp\htdocs\PhpstormProjects\WallpaperSite\catalog" />
+      <recent name="C:\xampp\htdocs\PhpstormProjects\WallpaperSite\images" />
       <recent name="C:\xampp\htdocs\WebstormProjects\WallpaperSite\vendor" />
       <recent name="C:\xampp\htdocs\WebstormProjects\WallpaperSite\contentscroll" />
-      <recent name="C:\xampp\htdocs\WebstormProjects\WallpaperSite\js\index" />
-      <recent name="C:\xampp\htdocs\WebstormProjects\WallpaperSite\images\indexContent\fantasy" />
-      <recent name="C:\xampp\htdocs\WebstormProjects\WallpaperSite\images\indexContent\tech" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -142,6 +175,58 @@
       <workItem from="1644942469288" duration="8795000" />
       <workItem from="1645022719555" duration="15764000" />
       <workItem from="1645116088115" duration="1194000" />
+      <workItem from="1645175468119" duration="9607000" />
+      <workItem from="1645194779531" duration="7060000" />
+      <workItem from="1645219574574" duration="906000" />
+      <workItem from="1645287141677" duration="8961000" />
+      <workItem from="1645335750694" duration="2677000" />
+      <workItem from="1645429933117" duration="759000" />
+      <workItem from="1645459822067" duration="1619000" />
+      <workItem from="1645462478523" duration="3594000" />
+      <workItem from="1645472906531" duration="1614000" />
+      <workItem from="1645523723831" duration="202000" />
+      <workItem from="1645525800089" duration="1642000" />
+      <workItem from="1645531154843" duration="1619000" />
+      <workItem from="1645606513567" duration="789000" />
+      <workItem from="1645611979894" duration="1122000" />
+      <workItem from="1645627701060" duration="14150000" />
+      <workItem from="1645691736014" duration="670000" />
+      <workItem from="1645702784626" duration="1323000" />
+      <workItem from="1645715517418" duration="433000" />
+      <workItem from="1645715973581" duration="176000" />
+      <workItem from="1645716168076" duration="445000" />
+      <workItem from="1645716638338" duration="30000" />
+      <workItem from="1645716856816" duration="367000" />
+      <workItem from="1645717249641" duration="58000" />
+      <workItem from="1645717323762" duration="71000" />
+      <workItem from="1645717413920" duration="633000" />
+      <workItem from="1645730442875" duration="8955000" />
+      <workItem from="1645816151105" duration="5556000" />
+      <workItem from="1645898816021" duration="4383000" />
+      <workItem from="1646506694561" duration="7150000" />
+      <workItem from="1646566360270" duration="11464000" />
+      <workItem from="1646637622048" duration="4582000" />
+      <workItem from="1646646719330" duration="3010000" />
+      <workItem from="1646650672551" duration="1030000" />
+      <workItem from="1646681228266" duration="8063000" />
+      <workItem from="1646755969377" duration="6255000" />
+      <workItem from="1646826831780" duration="306000" />
+      <workItem from="1646846748853" duration="1416000" />
+      <workItem from="1646911247254" duration="4973000" />
+      <workItem from="1647110341920" duration="9836000" />
+      <workItem from="1647173882078" duration="2617000" />
+      <workItem from="1647197040593" duration="9699000" />
+      <workItem from="1647241805096" duration="2511000" />
+      <workItem from="1647715054813" duration="10722000" />
+      <workItem from="1647768724711" duration="10920000" />
+      <workItem from="1647882137117" duration="5558000" />
+      <workItem from="1647939718190" duration="2710000" />
+      <workItem from="1647942859986" duration="65000" />
+      <workItem from="1648195548313" duration="2591000" />
+      <workItem from="1648409150055" duration="597000" />
+      <workItem from="1648493786693" duration="4684000" />
+      <workItem from="1648544658627" duration="630000" />
+      <workItem from="1648794888874" duration="5233000" />
     </task>
     <task id="LOCAL-00001" summary="adding workspace.xml">
       <created>1645027193117</created>
@@ -150,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645027193117</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added modal.js&#10;changes to index.php and Login.php&#10;Overall improved website performance">
+      <created>1645175945432</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645175945432</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,8 +260,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="adding workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding workspace.xml" />
+    <MESSAGE value="added modal.js&#10;changes to index.php and Login.php&#10;Overall improved website performance" />
+    <option name="LAST_COMMIT_MESSAGE" value="added modal.js&#10;changes to index.php and Login.php&#10;Overall improved website performance" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

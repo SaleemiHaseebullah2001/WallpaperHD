@@ -29,22 +29,7 @@
         </button>
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
-            <div class="navbar-nav">
-                <a href="index.php" class="nav-item nav-link">Home</a>
-                <a href="About.php" class="nav-item nav-link">About</a>
-                <div class="nav-item dropdown">
-                    <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Categories</a>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Web Design</a>
-                        <a href="#" class="dropdown-item">Web Development</a>
-                        <a href="#" class="dropdown-item">Graphic Design</a>
-                        <a href="#" class="dropdown-item">Digital Marketing</a>
-                    </div>
-                </div>
-                <a href="TOS.php" class="nav-item nav-link">Terms</a>
-                <a href="#" class="nav-item nav-link">Blog</a>
-                <a href="ContactUs.php" class="nav-item nav-link">Contact</a>
-            </div>
+            
 
             <div class="navbar-nav ml-auto action-buttons">
                 <?php
@@ -113,38 +98,17 @@
     8. Governing Law
     Any claim related to Company Name's Website shall be governed by the laws of Country without regards to its conflict of law provisions.</div>
 
-<footer class="footer-distributed">
-
-    <div class="footer-right">
-
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/SaleemiHaseebullah2001" target="_blank"><i class="fa fa-github"></i></a>
-
+<footer>
+    <div class="footer-main">
+        <div id="sticky" class="copyright">
+            <div class="footer-links">
+                <a href="About.php">About Me</a>
+                <a href="Tos.php">Terms&Conditions</a>
+                <a href="ContactUs.php">Contact Me</a>
+            </div>
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | WallpaperHD is made by AsibX </p>
+        </div>
     </div>
-
-    <div class="footer-left">
-
-        <p class="footer-links">
-            <a class="link-1" href="index.php">Home</a>
-
-            <a href="#">Blog</a>
-
-            <a href="#">Pricing</a>
-
-            <a href="#">About</a>
-
-            <a href="#">Term of Services</a>
-
-            <a href="ContactUs.php">Contact</a>
-        </p>
-
-        <p class="copyright">
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | WallpaperHD is made by AsibX
-        </p>
-    </div>
-
 </footer>
 <!-- Footer Scripts-->
 <script src="js/index/footer/jquery.min.js"></script>

@@ -1,4 +1,5 @@
 <?php include('Server.php');?>
+<?php include ('php/Auth.php');?>
 <?php
 if (count($errors) > 0) : ?>
     <div class="error">

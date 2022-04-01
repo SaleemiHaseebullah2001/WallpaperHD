@@ -32,22 +32,7 @@
         </button>
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
-            <div class="navbar-nav">
-                <a href="index.php" class="nav-item nav-link">Home</a>
-                <a href="About.php" class="nav-item nav-link">About</a>
-                <div class="nav-item dropdown">
-                    <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Categories</a>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Web Design</a>
-                        <a href="#" class="dropdown-item">Web Development</a>
-                        <a href="#" class="dropdown-item">Graphic Design</a>
-                        <a href="#" class="dropdown-item">Digital Marketing</a>
-                    </div>
-                </div>
-                <a href="TOS.php" class="nav-item nav-link">Terms</a>
-                <a href="#" class="nav-item nav-link">Blog</a>
-                <a href="ContactUs.php" class="nav-item nav-link">Contact</a>
-            </div>
+            
             <div class="navbar-nav ml-auto action-buttons">
                 <?php
                 if( isset($_SESSION['your_name']) && !empty($_SESSION['your_name']) ){
@@ -103,7 +88,7 @@ if (isset($_GET["key"]) && isset($_GET["email"]) && isset($_GET["action"])
 <p>The link is invalid/expired. Either you did not copy the correct link
 from the email, or you have already used the key in which case it is
 deactivated.</p>
-<p><a href="http://localhost/WebstormProjects/WallpaperSite/ForgotPassword.php">
+<p><a href="http://localhost/PhpstormProjects/WallpaperSite/ForgotPassword.php">
 Click here</a> to reset password.</p>';
 	}else{
   $row = mysqli_fetch_assoc($query);
@@ -179,7 +164,7 @@ WHERE `email`='".$email."';"
 mysqli_query($db,"DELETE FROM `password_reset_temp` WHERE `email`='".$email."';");
 
 echo '<div class="errorrp"><p>Congratulations! Your password has been updated successfully.</p>
-<p><a href="https://www.allphptricks.com/forgot-password/login.php">
+<p><a href="http://localhost/PhpstormProjects/WallpaperSite/Login.php">
 Click here</a> to Login.</p></div><br />';
 	  }
 }

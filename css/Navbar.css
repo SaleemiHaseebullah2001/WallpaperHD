@@ -32,7 +32,7 @@
     position: relative;
 }
 .search-box input {
-    padding-right: 35px;
+    /*padding-right: 35px;*/
     border-color: #dfe3e8;
     border-radius: 4px !important;
     box-shadow: none
@@ -47,9 +47,10 @@
     padding: 7px;
     height: 100%;
 }
-.search-box i {
-    color: #a0a5b1;
+.search-box i button{
+    color: #006699;
     font-size: 19px;
+    z-index: 100;
 }
 .navbar .sign-up-btn {
     min-width: 110px;

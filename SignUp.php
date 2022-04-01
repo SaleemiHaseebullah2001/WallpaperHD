@@ -38,22 +38,7 @@ include('php/Server.php') ?>
         </button>
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
-            <div class="navbar-nav">
-                <a href="index.php" class="nav-item nav-link">Home</a>
-                <a href="About.php" class="nav-item nav-link">About</a>
-                <div class="nav-item dropdown">
-                    <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Categories</a>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Web Design</a>
-                        <a href="#" class="dropdown-item">Web Development</a>
-                        <a href="#" class="dropdown-item">Graphic Design</a>
-                        <a href="#" class="dropdown-item">Digital Marketing</a>
-                    </div>
-                </div>
-                <a href="TOS.php" class="nav-item nav-link">Terms</a>
-                <a href="#" class="nav-item nav-link">Blog</a>
-                <a href="ContactUs.php" class="nav-item nav-link">Contact</a>
-            </div>
+            
 
             <div class="navbar-nav ml-auto action-buttons">
                 <?php
@@ -102,7 +87,7 @@ include('php/Server.php') ?>
                         <?php include ('php/Errors.php')?>
                         <div class="form-group">
                             <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                            <input type="text" name="name" id="name" placeholder="Your Name"/>
+                            <input type="text" name="name" id="name" placeholder="Your Username" maxlength="12"/>
                         </div>
                         <div class="form-group">
                             <label for="email"><i class="zmdi zmdi-email"></i></label>
@@ -110,7 +95,7 @@ include('php/Server.php') ?>
                         </div>
                         <div class="form-group">
                             <label for="password"><i class="zmdi zmdi-lock"></i></label>
-                            <input type="password" name="pass" id="password" placeholder="Password"/>
+                            <input type="password" name="pass" id="password" placeholder="Password" minlength="8" maxlength="24"/>
                         </div>
                         <div class="form-group">
                             <label for="re_pass"><i class="zmdi zmdi-lock-outline"></i></label>
@@ -119,7 +104,7 @@ include('php/Server.php') ?>
                         <div class="form-group">
                             <input type="checkbox" name="agree-term" id="agree-term" class="agree-term"/>
                             <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
-                                statements in <a href="TOS.php" class="term-service">Terms of service</a></label>
+                                statements in <a href="Tos.php" class="term-service">Terms of service</a></label>
                         </div>
                         <div class="form-group form-button">
                             <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>

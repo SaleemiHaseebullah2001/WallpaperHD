@@ -1201,67 +1201,90 @@
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <key id="344" parent="338" name="PRIMARY">
+    <column id="344" parent="338" name="data_class">
+      <DataType>varchar(24)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <key id="345" parent="338" name="PRIMARY">
       <ColNames>id_img</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="345" parent="339" name="id">
+    <column id="346" parent="339" name="id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="346" parent="339" name="email">
+    <column id="347" parent="339" name="email">
       <DataType>varchar(250)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="347" parent="339" name="key">
+    <column id="348" parent="339" name="key">
       <DataType>varchar(250)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="348" parent="339" name="expDate">
+    <column id="349" parent="339" name="expDate">
       <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <key id="349" parent="339" name="PRIMARY">
+    <key id="350" parent="339" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="350" parent="340" name="id">
+    <column id="351" parent="340" name="id">
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="351" parent="340" name="name">
+    <column id="352" parent="340" name="name">
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="352" parent="340" name="email">
+    <column id="353" parent="340" name="email">
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="353" parent="340" name="password">
+    <column id="354" parent="340" name="password">
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="354" parent="340" name="trn_date">
+    <column id="355" parent="340" name="trn_date">
       <DataType>date|0s</DataType>
       <DefaultExpression>current_timestamp()</DefaultExpression>
       <Position>5</Position>
     </column>
-    <key id="355" parent="340" name="PRIMARY">
+    <index id="356" parent="340" name="name">
+      <ColNames>name</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="357" parent="340" name="email">
+      <ColNames>email</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="358" parent="340" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
+    </key>
+    <key id="359" parent="340" name="name">
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>name</UnderlyingIndexName>
+    </key>
+    <key id="360" parent="340" name="email">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>email</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

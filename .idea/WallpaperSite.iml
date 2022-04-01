@@ -31,5 +31,12 @@
     <orderEntry type="library" name="popper.js" level="application" />
     <orderEntry type="library" name="jquery-3.3.1.slim" level="application" />
     <orderEntry type="library" name="dbed6b6114" level="application" />
+    <orderEntry type="library" name="mdbootstrap" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="jquery-3.2.1.slim" level="application" />
+    <orderEntry type="library" name="w3" level="application" />
+    <orderEntry type="library" name="normalize" level="application" />
+    <orderEntry type="library" name="opg3wle" level="application" />
+    <orderEntry type="library" name="line" level="application" />
   </component>
 </module>

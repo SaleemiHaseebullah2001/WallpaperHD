@@ -1,18 +1,22 @@
-<!--?php
+<?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+if ((isset($_POST['name']) && !empty($_POST['name'])) && (isset($_POST['email']) && !empty($_POST['email']))
+&& (isset($_POST['subject']) && !empty($_POST['subject'])) && (isset($_POST['message'])) && !empty($_POST['message'])){
 require_once __DIR__ . '/vendor/phpmailer/src/Exception.php';
 require_once __DIR__ . '/vendor/phpmailer/src/PHPMailer.php';
 require_once __DIR__ . '/vendor/phpmailer/src/SMTP.php';
-
 // passing true in constructor enables exceptions in PHPMailer
 $mail = new PHPMailer(true);
-
 try {
 // Server settings
-$mail->SMTPDebug = SMTP::DEBUG_SERVER; // for detailed debug output
+$name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+//$mail->SMTPDebug = SMTP::DEBUG_SERVER; // for detailed debug output
 $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true;
@@ -20,26 +24,27 @@ $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
 $mail->Username = 'itsme.valorantpro@gmail.com'; // YOUR gmail email
-$mail->Password = 'Pi4zzadarminumer018!'; // YOUR gmail password
+$mail->Password = 'Why4llwaysme!'; // YOUR gmail password
 
 // Sender and recipient settings
-$mail->setFrom('asibpro@gmail.com', 'Sender Name');
-$mail->addAddress('itsme.valorantpro@gmail.com', 'Receiver Name');
-$mail->addReplyTo('asibpro@gmail.com', 'Sender Name'); // to set the reply to
+$mail->setFrom($email, $name);
+$mail->addAddress('itsme.valorantpro@gmail.com', 'King');
+$mail->addReplyTo($email, $name); // to set the reply to
 
 // Setting the email content
 $mail->IsHTML(true);
-$mail->Subject = "Send email using Gmail SMTP and PHPMailer";
-$mail->Body = 'HTML message body. <b>Gmail</b> SMTP email body.';
+$mail->Subject = $subject;
+$mail->Body = $name."\n".$email."\n".$message;
 $mail->AltBody = 'Plain text message body for non-HTML email client. Gmail SMTP email body.';
 
 $mail->send();
-echo "Email message sent.";
+//echo "Email message sent.";
+
 } catch (Exception $e) {
 echo "Error in sending email. Mailer Error: {$mail->ErrorInfo}";
 }
-
-?-->
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -85,22 +90,7 @@ echo "Error in sending email. Mailer Error: {$mail->ErrorInfo}";
         </button>
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
-            <div class="navbar-nav">
-                <a href="index.php" class="nav-item nav-link">Home</a>
-                <a href="About.php" class="nav-item nav-link">About</a>
-                <div class="nav-item dropdown">
-                    <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Categories</a>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Web Design</a>
-                        <a href="#" class="dropdown-item">Web Development</a>
-                        <a href="#" class="dropdown-item">Graphic Design</a>
-                        <a href="#" class="dropdown-item">Digital Marketing</a>
-                    </div>
-                </div>
-                <a href="TOS.php" class="nav-item nav-link">Terms</a>
-                <a href="#" class="nav-item nav-link">Blog</a>
-                <a href="ContactUs.php" class="nav-item nav-link">Contact</a>
-            </div>
+            
 
             <div class="navbar-nav ml-auto action-buttons">
                 <?php
@@ -160,24 +150,24 @@ echo "Error in sending email. Mailer Error: {$mail->ErrorInfo}";
 
                         <form class="mb-5" action="ContactUs.php" method="post" id="contactForm" name="contactForm">
                             <div class="row">
-                                <!--?php echo((!empty($errorMessage)) ? $errorMessage : '') ?-->
+                                <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
                                 <div class="col-md-12 form-group">
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 form-group">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 form-group">
-                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12 form-group">
-                                    <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Write your message"></textarea>
+                                    <textarea class="form-control" name="message" id="message" cols="30" rows="7" placeholder="Write your message" required></textarea>
                                 </div>
                             </div>
                             <div class="row">
@@ -197,39 +187,18 @@ echo "Error in sending email. Mailer Error: {$mail->ErrorInfo}";
 <br>
 <br>
 <br>
-<footer class="footer-distributed">
-
-    <div class="footer-right">
-
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="https://github.com/SaleemiHaseebullah2001" target="_blank"><i class="fa fa-github"></i></a>
-
-    </div>
-
-    <div class="footer-left">
-
-        <p class="footer-links">
-            <a class="link-1" href="index.php">Home</a>
-
-            <a href="#">Blog</a>
-
-            <a href="#">Pricing</a>
-
-            <a href="#">About</a>
-
-            <a href="#">Term of Services</a>
-
-            <a href="ContactUs.php">Contact</a>
-        </p>
-
-        <p class="copyright">
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | WallpaperHD is made by AsibX
-        </p>
-    </div>
-
-</footer>
+    <footer>
+        <div class="footer-main">
+            <div id="sticky" class="copyright">
+                <div class="footer-links">
+                    <a href="About.php">About Me</a>
+                    <a href="Tos.php">Terms&Conditions</a>
+                    <a href="ContactUs.php">Contact Me</a>
+                </div>
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | WallpaperHD is made by AsibX </p>
+            </div>
+        </div>
+    </footer>
 <!--Form Validation Script -->
     <script type="text/javascript">
         function validateContactForm() {

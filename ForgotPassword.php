@@ -31,56 +31,41 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Collection of nav links, forms, and other content for toggling -->
-        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
-            <div class="navbar-nav">
-                <a href="index.php" class="nav-item nav-link">Home</a>
-                <a href="About.php" class="nav-item nav-link">About</a>
-                <div class="nav-item dropdown">
-                    <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Categories</a>
-                    <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">Web Design</a>
-                        <a href="#" class="dropdown-item">Web Development</a>
-                        <a href="#" class="dropdown-item">Graphic Design</a>
-                        <a href="#" class="dropdown-item">Digital Marketing</a>
-                    </div>
-                </div>
-                <a href="TOS.php" class="nav-item nav-link">Terms</a>
-                <a href="#" class="nav-item nav-link">Blog</a>
-                <a href="ContactUs.php" class="nav-item nav-link">Contact</a>
-            </div>
-
-            <div class="navbar-nav ml-auto action-buttons">
-                <?php
-                if( isset($_SESSION['your_name']) && !empty($_SESSION['your_name']) ){
-                    ?>
-                    <text class="display-flex-center"><?php echo $_SESSION['your_name'] ?></text>
-                    <?php
-                }
-                ?>
-
-                <?php
-                if (isset($_GET['logout'])) {
-                    session_destroy();
-                    unset($_SESSION['your_name']);
-                    header("location: Login.php");
-                }
-                if( isset($_SESSION['your_name']) && !empty($_SESSION['your_name']) )
-                {
-                    ?>
-
-                    <div class="nav-item">
-                        <a href="index.php?logout='1'" class="nav-link mr-4"> Logout </a>
-                    </div>
-                <?php }else{ ?>
-                    <div class="nav-item">
-                        <a href="Login.php" class="nav-link mr-4">Login</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="SignUp.php" class="btn btn-primary sign-up-btn">Sign up</a>
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
+<!--        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">-->
+<!--            -->
+<!---->
+<!--            <div class="navbar-nav ml-auto action-buttons">-->
+<!--                --><?php
+//                if( isset($_SESSION['your_name']) && !empty($_SESSION['your_name']) ){
+//                    ?>
+<!--                    <text class="display-flex-center">--><?php //echo $_SESSION['your_name'] ?><!--</text>-->
+<!--                    --><?php
+//                }
+//                ?>
+<!---->
+<!--                --><?php
+//                if (isset($_GET['logout'])) {
+//                    session_destroy();
+//                    unset($_SESSION['your_name']);
+//                    header("location: Login.php");
+//                }
+//                if( isset($_SESSION['your_name']) && !empty($_SESSION['your_name']) )
+//                {
+//                    ?>
+<!---->
+<!--                    <div class="nav-item">-->
+<!--                        <a href="index.php?logout='1'" class="nav-link mr-4"> Logout </a>-->
+<!--                    </div>-->
+<!--                --><?php //}else{ ?>
+<!--                    <div class="nav-item">-->
+<!--                        <a href="Login.php" class="nav-link mr-4">Login</a>-->
+<!--                    </div>-->
+<!--                    <div class="nav-item">-->
+<!--                        <a href="SignUp.php" class="btn btn-primary sign-up-btn">Sign up</a>-->
+<!--                    </div>-->
+<!--                --><?php //} ?>
+<!--            </div>-->
+<!--        </div>-->
     </nav>
 </header>
 
@@ -99,7 +84,7 @@ $error = "";
 if (!$email) {
    $error .="<p>Invalid email address please type a valid email address!</p>";
    }else{
-   $sel_query = "SELECT * FROM `users` WHERE email='".$email."'";
+   $sel_query = "SELECT * FROM users WHERE email='".$email."'";
    $results = mysqli_query($db,$sel_query);
    $row = mysqli_num_rows($results);
    if ($row==""){
@@ -119,7 +104,7 @@ if (!$email) {
    $key = $key . $addKey;
 // Insert Temp Table
 mysqli_query($db,
-"INSERT INTO `password_reset_temp` (`email`, `key`, `expDate`)
+"INSERT INTO password_reset_temp (`email`, `key`, `expDate`)
 VALUES ('".$email."', '".$key."', '".$expDate."');");
 
 $output='<p>Dear user,</p>';
@@ -129,7 +114,7 @@ $output.='<p>-------------------------------------------------------------</p>';
 key='.$key.'&email='.$email.'&action=reset" target="_blank">
 https://www.allphptricks.com/forgot-password/reset-password.php
 ?key='.$key.'&email='.$email.'&action=reset</a></p>'; */
-$output.='<p><a href="http://localhost/WebstormProjects/WallpaperSite/ResetPassword.php?key='.$key.'&email='.$email.'&action=reset" target="_blank">
+$output.='<p><a href="http://localhost/PhpstormProjects/WallpaperSite/ResetPassword.php?key='.$key.'&email='.$email.'&action=reset" target="_blank">
 http://localhost/WebstormProjects/WallpaperSite/ResetPassword.php
 ?key='.$key.'&email='.$email.'&action=reset</a></p>';
 $output.='<p>-------------------------------------------------------------</p>';
@@ -141,7 +126,7 @@ your account and change your security password as someone may have guessed it.</
 $output.='<p>Thanks,</p>';
 $output.='<p>WallpaperHD Team</p>';
 $body = $output;
-$subject = "Password Recovery - wallpaperhd.altervista.org";
+$subject = "Password Recovery - wallpaperzhd";
 
 $email_to = $email;
 $fromserver = "noreply.wallpaperhd@gmail.com";
@@ -152,7 +137,7 @@ $mail = new PHPMailer(true);
 $mail->IsSMTP();
 $mail->CharSet = "utf-8";
 $mail->Host = "smtp.gmail.com"; // Enter your host here
-$mail->SMTPSecure = 'tsl';
+
 $mail->SMTPOptions = array(
     'tsl' => array(
         'verify_peer' => false,
@@ -162,7 +147,7 @@ $mail->SMTPOptions = array(
 );
 $mail->SMTPAuth = true;
 $mail->Username = "noreply.wallpaperhd@gmail.com"; // Enter your email here
-$mail->Password = "Why4llwaysme!"; //Enter your password here
+$mail->Password = "Wallpaperhd.2001!"; //Enter your password here
 $mail->Port = 587;
 $mail->IsHTML(true);
 $mail->From = "noreply.wallpaperhd@gmail.com";
@@ -171,13 +156,18 @@ $mail->Sender = $fromserver; // indicates ReturnPath header
 $mail->Subject = $subject;
 $mail->Body = $body;
 $mail->AddAddress($email_to);
-if(!$mail->Send()){
-echo "Mailer Error: " . $mail->ErrorInfo;
-}else{
-echo "<div class='errorrp'>
-<p>An email has been sent to you with instructions on how to reset your password.</p>
-</div><br /><br /><br />";
-	}
+$mail->SMTPSecure = 'tsl';
+       try {
+           if (!$mail->Send()) {
+               echo "Mailer Error: " . $mail->ErrorInfo;
+           } else {
+               echo "<div class='errorrp'>
+           <p>An email has been sent to you with instructions on how to reset your password.</p>
+           </div><br /><br /><br />";
+           }
+       } catch (phpmailerException $e) {
+           echo $e.$error;
+       }
    }
 }else{
 ?>
