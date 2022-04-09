@@ -38,5 +38,6 @@
     <orderEntry type="library" name="normalize" level="application" />
     <orderEntry type="library" name="opg3wle" level="application" />
     <orderEntry type="library" name="line" level="application" />
+    <orderEntry type="library" name="ionicons" level="application" />
   </component>
 </module>

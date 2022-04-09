@@ -4,19 +4,11 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="css/TOS.css">
     <link rel="stylesheet" href="css/Navbar.css">
     <link rel="stylesheet" href="css/footer-style/footer.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>Terms & Conditions</title>
 </head>
 <body>
@@ -98,30 +90,30 @@
     8. Governing Law
     Any claim related to Company Name's Website shall be governed by the laws of Country without regards to its conflict of law provisions.</div>
 
-<footer>
-    <div class="footer-main">
-        <div id="sticky" class="copyright">
-            <div class="footer-links">
-                <a href="About.php">About Me</a>
-                <a href="Tos.php">Terms&Conditions</a>
-                <a href="ContactUs.php">Contact Me</a>
-            </div>
-            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | WallpaperHD is made by AsibX </p>
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/asib_s/"><i class="icon ion-social-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC4aRNTgDTFGKAxhWCcRr32Q"><i class="icon ion-social-youtube"></i></a>
+            <a href="https://github.com/SaleemiHaseebullah2001/"><i class="icon ion-social-github"></i></a>
+            <a href="https://www.facebook.com/WallPapersHD2001"><i class="icon ion-social-facebook"></i></a>
         </div>
-    </div>
-</footer>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="index.php">Home</a></li>
+            <li class="list-inline-item"><a href="About.php">About Me</a></li>
+            <li class="list-inline-item"><a href="ContactUs.php">Contact Me</a></li>
+            <li class="list-inline-item"><a href="Tos.php">Terms&Conditions</a></li>
+        </ul>
+        <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | WallpaperHD is made by AsibX</p>
+    </footer>
+</div>
 <!-- Footer Scripts-->
 <script src="js/index/footer/jquery.min.js"></script>
 <script src="js/index/footer/popper.js"></script>
 <script src="js/index/footer/bootstrap.min.js"></script>
 <script src="js/index/footer/main.js"></script>
-
 <script src="https://www.markuptag.com/bootstrap/5/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
-</script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-</script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>

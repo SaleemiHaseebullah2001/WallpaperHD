@@ -58,27 +58,24 @@ $rs_result = mysqli_query ($db, $stmt);
     <!-- Bootstrap CSS -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+    <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/Navbar.css">
     <link rel="stylesheet" href="css/Images.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/footer-style/footer.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
-    <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <title>WallpaperHD</title>
 </head>
@@ -270,7 +267,7 @@ $rs_result = mysqli_query ($db, $stmt);
         $image_alt = $row['alt'];
         $data_class = $row['data_class'];
         echo '<div class="col-md-3 images zoom" data-class='.$data_class.'>
-                    <img class="modal-body img-modal-open" onclick="getImage()" data-toggle="modal" data-target="#exampleModalCenter" data-tags="atlantis" src='.$image.'  data-alt='.$image_alt.' alt='.$image_alt.'>
+                    <img class="modal-body img-modal-open" onclick="getImage()" data-toggle="modal" data-target="#exampleModalCenter" src='.$image.'  data-class='.$data_class.' alt='.$image_alt.'>
                     <!--div style="height:20%">
                         <button type="button" class="btn btn-primary btn-modal-open" data-toggle="modal" data-target="#exampleModalCenter" onclick="getImage()" style="vertical-align:center">
                         Download
@@ -345,19 +342,40 @@ $rs_result = mysqli_query ($db, $stmt);
 
 <!--Footer area-->
 <br>
-
-<footer>
-    <div class="footer-main">
-        <div id="sticky" class="copyright">
-             <div class="footer-links">
-                <a href="About.php">About Me</a>
-                <a href="Tos.php">Terms&Conditions</a>
-                <a href="ContactUs.php">Contact Me</a>
-             </div>
-            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | WallpaperHD is made by AsibX </p>
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/asib_s/"><i class="icon ion-social-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UC4aRNTgDTFGKAxhWCcRr32Q"><i class="icon ion-social-youtube"></i></a>
+            <a href="https://github.com/SaleemiHaseebullah2001/"><i class="icon ion-social-github"></i></a>
+            <a href="https://www.facebook.com/WallPapersHD2001"><i class="icon ion-social-facebook"></i></a>
         </div>
-    </div>
-</footer>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="index.php">Home</a></li>
+            <li class="list-inline-item"><a href="About.php">About Me</a></li>
+            <li class="list-inline-item"><a href="ContactUs.php">Contact Me</a></li>
+            <li class="list-inline-item"><a href="Tos.php">Terms&Conditions</a></li>
+        </ul>
+        <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | WallpaperHD is made by AsibX</p>
+    </footer>
+</div>
+<!--<footer>-->
+<!--    <div class="footer-main">-->
+<!--        <div class="media-links">-->
+<!--            <a href=""><i class="fa fa-facebook"></i></a>-->
+<!--            <a href=""><i class="fa fa-instagram"></i></a>-->
+<!--            <a href=""><i class="fa fa-youtube"></i></a>-->
+<!--        </div>-->
+<!--        <div id="sticky" class="copyright">-->
+<!--             <div class="footer-links">-->
+<!--                <a href="About.php">About Me</a>-->
+<!--                <a href="Tos.php">Terms&Conditions</a>-->
+<!--                <a href="ContactUs.php">Contact Me</a>-->
+<!--             </div>-->
+<!--            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | WallpaperHD is made by AsibX </p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
 
 <!--script>
     function go2Page()
@@ -406,7 +424,7 @@ $rs_result = mysqli_query ($db, $stmt);
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Bootstrap JS -->
 <script src="js/index/Images.js"></script>

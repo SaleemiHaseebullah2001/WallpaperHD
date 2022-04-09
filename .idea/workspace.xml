@@ -1,38 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37a83c99-aee4-4489-8b75-2c76f35556e7" name="Changes" comment="added modal.js&#10;changes to index.php and Login.php&#10;Overall improved website performance">
-      <change afterPath="$PROJECT_DIR$/ChangePwFromProfile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/modal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/myaccount.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/heart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myaccount.php" afterDir="false" />
+    <list default="true" id="37a83c99-aee4-4489-8b75-2c76f35556e7" name="Changes" comment="huge changes.&#10;fixed responsive problem&#10;fixed pagination system&#10;deleted direct pagination system&#10;fixed full url not showing in share modal">
       <change beforePath="$PROJECT_DIR$/.idea/WallpaperSite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WallpaperSite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/37c25801-f5ef-4937-b4be-0026dcfa2f03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/37c25801-f5ef-4937-b4be-0026dcfa2f03.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/About.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactUs.php" beforeDir="false" afterPath="$PROJECT_DIR$/ContactUs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ForgotPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/ForgotPassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResetPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/ResetPassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SaveAllImages.php" beforeDir="false" afterPath="$PROJECT_DIR$/SaveAllImages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SignUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/SignUp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TOS.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Images.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Images.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tos.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/footer-style/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/footer-style/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index/Images.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index/Images.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Errors.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Errors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/common/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/common/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/layouts/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/layouts/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/welcome.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +203,11 @@
       <workItem from="1648409150055" duration="597000" />
       <workItem from="1648493786693" duration="4684000" />
       <workItem from="1648544658627" duration="630000" />
-      <workItem from="1648794888874" duration="5233000" />
+      <workItem from="1648794888874" duration="7418000" />
+      <workItem from="1648916623327" duration="527000" />
+      <workItem from="1649261843023" duration="278000" />
+      <workItem from="1649272713950" duration="2558000" />
+      <workItem from="1649503168315" duration="2979000" />
     </task>
     <task id="LOCAL-00001" summary="adding workspace.xml">
       <created>1645027193117</created>
@@ -242,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645175945432</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="huge changes.&#10;fixed responsive problem&#10;fixed pagination system&#10;deleted direct pagination system&#10;fixed full url not showing in share modal">
+      <created>1648802170687</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648802170687</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +251,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="adding workspace.xml" />
     <MESSAGE value="added modal.js&#10;changes to index.php and Login.php&#10;Overall improved website performance" />
-    <option name="LAST_COMMIT_MESSAGE" value="added modal.js&#10;changes to index.php and Login.php&#10;Overall improved website performance" />
+    <MESSAGE value="huge changes.&#10;fixed responsive problem&#10;fixed pagination system&#10;deleted direct pagination system&#10;fixed full url not showing in share modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="huge changes.&#10;fixed responsive problem&#10;fixed pagination system&#10;deleted direct pagination system&#10;fixed full url not showing in share modal" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
