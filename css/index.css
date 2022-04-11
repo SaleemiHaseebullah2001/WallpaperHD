@@ -176,14 +176,67 @@
 .main .container-fluid img{
     width: 100%
 }
-.d-flex input[type=text]{
-    float: right;
-    padding: 3px;
-    border: none;
-    margin-top: 5px;
-    margin-right: 10px;
-    font-size: 15px;
+/*.d-flex input[type=text]{*/
+/*    float: right;*/
+/*    padding: 3px;*/
+/*    border: none;*/
+/*    margin-top: 5px;*/
+/*    margin-right: 10px;*/
+/*    font-size: 15px;*/
+/*}*/
+/*-------------------------Images CSS---------------------------*/
+
+.zoom {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
+.zoom img {
+    vertical-align: top;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.zoom:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/* Container needed to position the overlay. Adjust the width as needed */
+.container-lg {
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+}
+
+/* Make the image to responsive */
+.image {
+    width: 100%;
+    height: auto;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container-lg:hover {
+    opacity: 1;
+}
+
+@media(min-width: 768px){
+    .col-md-3{
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 30%;
+    }
+    .main .container-fluid img{
+        width: 100%;
+    }
+}
+/*-------------------------Pagination CSS---------------------------*/
 .pagination_section{
     display: inline-block;
 }
@@ -204,66 +257,3 @@
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
-/*.nav-item:hover{*/
-/*    color: #FFF;*/
-/*    border: 2px solid #FFCF33;*/
-/*    border-radius: 5px;*/
-
-/*}*/
-/*.d-flex input:hover{*/
-/*    border: 2px solid #FFCF33;*/
-/*    border-radius: 5px;*/
-/*}*/
-/*button:hover{*/
-/*    border: 2px solid #FFCF33;*/
-/*}*/
-/*.top-search .search {*/
-/*    width: 100%;*/
-/*    position: relative;*/
-/*    display: flex;*/
-/*}*/
-/*.top-search .searchTerm {*/
-/*    width: 100%;*/
-/*    border: 5px solid #FFCF33;*/
-/*    border-right: none;*/
-/*    padding: 5px;*/
-/*    border-radius: 5px 0 0 5px;*/
-/*    outline: none;*/
-/*    color: #9DBFAF;*/
-/*}*/
-/*.top-search .searchTerm:focus{*/
-/*    color: #FFCF33;*/
-/*}*/
-/*.top-search .searchButton {*/
-/*    width: 40px;*/
-/*    !*height: 50px;*!*/
-/*    !*border: 1px solid #FFCF33;*!*/
-/*    !*background: #FFCF33;*!*/
-/*    text-align: center;*/
-/*    color: #fff;*/
-/*    border-radius: 0 5px 5px 0;*/
-/*    cursor: pointer;*/
-/*    font-size: 20px;*/
-/*}*/
-/*.hide{*/
-/*    display:none;*/
-/*}*/
-@media screen and (max-width: 600px) {
-    .d-flex a,.d-flex input[type=text] {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-    }
-
-    .topnav input[type=text] {
-        border: 1px solid #ccc;
-    }
-}
-@media (max-width: 767px) {
-    .main .container-fluid img {
-        margin-bottom: 15px
-    }
-}

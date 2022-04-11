@@ -56,12 +56,9 @@ $rs_result = mysqli_query ($db, $stmt);
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="css/ionicons.min.css">
@@ -69,42 +66,20 @@ $rs_result = mysqli_query ($db, $stmt);
     <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/Navbar.css">
-    <link rel="stylesheet" href="css/Images.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/footer-style/footer.css">
 
     <title>WallpaperHD</title>
 </head>
 <body>
-<!--<script>-->
-<!--    window.fbAsyncInit = function() {-->
-<!--        FB.init({-->
-<!--            appId      : '1839782052879775',-->
-<!--            xfbml      : true,-->
-<!--            version    : 'v13.0'-->
-<!--        });-->
-<!--        FB.AppEvents.logPageView();-->
-<!--    };-->
-<!---->
-<!--    (function(d, s, id){-->
-<!--        var js, fjs = d.getElementsByTagName(s)[0];-->
-<!--        if (d.getElementById(id)) {return;}-->
-<!--        js = d.createElement(s); js.id = id;-->
-<!--        js.src = "https://connect.facebook.net/en_US/sdk.js";-->
-<!--        fjs.parentNode.insertBefore(js, fjs);-->
-<!--    }(document, 'script', 'facebook-jssdk'));-->
-<!--</script>-->
-<!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css" />
 <header>
     <!---->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a href="index.php" class="navbar-brand">Wallpaper<b>HD</b></a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Collection of nav links, forms, and other content for toggling -->
@@ -122,22 +97,22 @@ $rs_result = mysqli_query ($db, $stmt);
             </form>
 
             <div class="navbar-nav ml-auto action-buttons">
-                <?php
-                if( isset($_SESSION['your_name']) && !empty($_SESSION['your_name']) ){
-                    ?>
-                    <?php
-                }
-                ?>
-
-                <?php
-                if (isset($_GET['logout'])) {
-                    session_destroy();
-                    unset($_SESSION['your_name']);
-//                    header("location: index.php");
-                }
-                if( isset($_SESSION['your_name']) && !empty($_SESSION['your_name']) )
-                {
-                    ?>
+<!--                --><?php
+//                if( isset($_SESSION['your_name']) && !empty($_SESSION['your_name']) ){
+//                    ?>
+<!--                    --><?php
+//                }
+//                ?>
+<!---->
+<!--                --><?php
+//                if (isset($_GET['logout'])) {
+//                    session_destroy();
+//                    unset($_SESSION['your_name']);
+////                    header("location: index.php");
+//                }
+//                if( isset($_SESSION['your_name']) && !empty($_SESSION['your_name']) )
+//                {
+//                    ?>
                     <li class="nav-item dropdown" style="margin-right: 15px;">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Categories<span class="caret"></span>
@@ -158,47 +133,48 @@ $rs_result = mysqli_query ($db, $stmt);
                             <a href="index.php?query=space" class="dropdown-item" style="color: black">🚀 Space</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Profile </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">
-                            <b class="dropdown-item"><?php echo "Hi,".$_SESSION['your_name']?></b>
-                            <a class="dropdown-item" href="myaccount.php">My account</a>
-                            <a class="dropdown-item" href="UserGallery.php">Favourite</a>
-                            <a class="dropdown-item" href="index.php?logout='1'">Log out</a>
-                        </div>
-                    </li>
-                <?php }else{ ?>
-                    <li class="nav-item dropdown" style="margin-right: 15px;">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Categories<span class="caret"></span>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style=".dropdown-menu max-height: 280px;overflow-y: auto;">
-                            <a href="index.php?query=abstract" class="dropdown-item" style="color: black">🌀 Abstract</a>
-                            <a href="index.php?query=aesthetic" class="dropdown-item" style="color: black">🌻 Aesthetic</a>
-                            <a href="index.php?query=animals" class="dropdown-item" style="color: black">🐶 Animals</a>
-                            <a href="index.php?query=anime" class="dropdown-item" style="color: black">💥 Anime</a>
-                            <a href="index.php?query=cars" class="dropdown-item" style="color: black">🚗 Cars</a>
-                            <a href="index.php?query=city" class="dropdown-item" style="color: black">🌆 City</a>
-                            <a href="index.php?query=tech" class="dropdown-item" style="color: black">📱 Devices</a>
-                            <a href="index.php?query=fantasy" class="dropdown-item" style="color: black">🧚 Fantasy</a>
-                            <a href="index.php?query=fantasy" class="dropdown-item" style="color: black">🌹 Flowers</a>
-                            <a href="index.php?query=minimal" class="dropdown-item" style="color: black">🖼️ Minimal</a>
-                            <a href="index.php?query=nature" class="dropdown-item" style="color: black">🌳 Nature</a>
-                            <a href="index.php?query=games" class="dropdown-item" style="color: black">🎮 Games</a>
-                            <a href="index.php?query=space" class="dropdown-item" style="color: black">🚀 Space</a>
-                        </div>
-                    </li>
-                    <div class="nav-item">
-                        <a href="Login.php" class="nav-link mr-4">Login</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="SignUp.php" class="btn btn-primary sign-up-btn">Sign up</a>
-                    </div>
-                <?php } ?>
+<!--                    <li class="nav-item dropdown">-->
+<!--                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> Profile </a>-->
+<!--                        <div class="dropdown-menu dropdown-menu-right dropdown-cyan" aria-labelledby="navbarDropdownMenuLink-4">-->
+<!--                            <b class="dropdown-item">--><?php //echo "Hi,".$_SESSION['your_name']?><!--</b>-->
+<!--                            <a class="dropdown-item" href="myaccount.php">My account</a>-->
+<!--                            <a class="dropdown-item" href="UserGallery.php">Favourite</a>-->
+<!--                            <a class="dropdown-item" href="index.php?logout='1'">Log out</a>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                --><?php //}else{ ?>
+<!--                    <li class="nav-item dropdown" style="margin-right: 15px;">-->
+<!--                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                            Categories<span class="caret"></span>-->
+<!--                        </a>-->
+<!--                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style=".dropdown-menu max-height: 280px;overflow-y: auto;">-->
+<!--                            <a href="index.php?query=abstract" class="dropdown-item" style="color: black">🌀 Abstract</a>-->
+<!--                            <a href="index.php?query=aesthetic" class="dropdown-item" style="color: black">🌻 Aesthetic</a>-->
+<!--                            <a href="index.php?query=animals" class="dropdown-item" style="color: black">🐶 Animals</a>-->
+<!--                            <a href="index.php?query=anime" class="dropdown-item" style="color: black">💥 Anime</a>-->
+<!--                            <a href="index.php?query=cars" class="dropdown-item" style="color: black">🚗 Cars</a>-->
+<!--                            <a href="index.php?query=city" class="dropdown-item" style="color: black">🌆 City</a>-->
+<!--                            <a href="index.php?query=tech" class="dropdown-item" style="color: black">📱 Devices</a>-->
+<!--                            <a href="index.php?query=fantasy" class="dropdown-item" style="color: black">🧚 Fantasy</a>-->
+<!--                            <a href="index.php?query=fantasy" class="dropdown-item" style="color: black">🌹 Flowers</a>-->
+<!--                            <a href="index.php?query=minimal" class="dropdown-item" style="color: black">🖼️ Minimal</a>-->
+<!--                            <a href="index.php?query=nature" class="dropdown-item" style="color: black">🌳 Nature</a>-->
+<!--                            <a href="index.php?query=games" class="dropdown-item" style="color: black">🎮 Games</a>-->
+<!--                            <a href="index.php?query=space" class="dropdown-item" style="color: black">🚀 Space</a>-->
+<!--                        </div>-->
+<!--                    </li>-->
+<!--                    <div class="nav-item">-->
+<!--                        <a href="Login.php" class="nav-link mr-4">Login</a>-->
+<!--                    </div>-->
+<!--                    <div class="nav-item">-->
+<!--                        <a href="SignUp.php" class="btn btn-primary sign-up-btn">Sign up</a>-->
+<!--                    </div>-->
+<!--                --><?php //} ?>
             </div>
         </div>
     </nav>
 </header>
+
 <br>
 <br>
 <section class="main container-fluid text-center">
@@ -260,14 +236,14 @@ $rs_result = mysqli_query ($db, $stmt);
         </div>
     </div>
 
-    <div class="container-fluid" id="gallery">
+    <div class="container-fluid container-lg" id="gallery">
     <?php
     while ($row = mysqli_fetch_array($rs_result)) {
         $image = $row['name'];
         $image_alt = $row['alt'];
         $data_class = $row['data_class'];
         echo '<div class="col-md-3 images zoom" data-class='.$data_class.'>
-                    <img class="modal-body img-modal-open" onclick="getImage()" data-toggle="modal" data-target="#exampleModalCenter" src='.$image.'  data-class='.$data_class.' alt='.$image_alt.'>
+                    <img class="modal-body img-modal-open image" onclick="getImage()" data-toggle="modal" data-target="#exampleModalCenter" src='.$image.'  data-class='.$data_class.' alt='.$image_alt.'>
                     <!--div style="height:20%">
                         <button type="button" class="btn btn-primary btn-modal-open" data-toggle="modal" data-target="#exampleModalCenter" onclick="getImage()" style="vertical-align:center">
                         Download
@@ -359,24 +335,6 @@ $rs_result = mysqli_query ($db, $stmt);
         <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | WallpaperHD is made by AsibX</p>
     </footer>
 </div>
-<!--<footer>-->
-<!--    <div class="footer-main">-->
-<!--        <div class="media-links">-->
-<!--            <a href=""><i class="fa fa-facebook"></i></a>-->
-<!--            <a href=""><i class="fa fa-instagram"></i></a>-->
-<!--            <a href=""><i class="fa fa-youtube"></i></a>-->
-<!--        </div>-->
-<!--        <div id="sticky" class="copyright">-->
-<!--             <div class="footer-links">-->
-<!--                <a href="About.php">About Me</a>-->
-<!--                <a href="Tos.php">Terms&Conditions</a>-->
-<!--                <a href="ContactUs.php">Contact Me</a>-->
-<!--             </div>-->
-<!--            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | WallpaperHD is made by AsibX </p>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</footer>-->
-
 <!--script>
     function go2Page()
     {
@@ -422,8 +380,8 @@ $rs_result = mysqli_query ($db, $stmt);
 <!--modal box scripts-->
 <script src="js/index/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Bootstrap JS -->

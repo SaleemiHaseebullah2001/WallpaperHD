@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37a83c99-aee4-4489-8b75-2c76f35556e7" name="Changes" comment="huge changes.&#10;fixed responsive problem&#10;fixed pagination system&#10;deleted direct pagination system&#10;fixed full url not showing in share modal">
-      <change beforePath="$PROJECT_DIR$/.idea/WallpaperSite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WallpaperSite.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="37a83c99-aee4-4489-8b75-2c76f35556e7" name="Changes" comment="Basic changes&#10;Better improvement&#10;Added new footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About.php" beforeDir="false" afterPath="$PROJECT_DIR$/About.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactUs.php" beforeDir="false" afterPath="$PROJECT_DIR$/ContactUs.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tos.php" beforeDir="false" afterPath="$PROJECT_DIR$/Tos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Images.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/css/footer-style/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/footer-style/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +204,8 @@
       <workItem from="1648916623327" duration="527000" />
       <workItem from="1649261843023" duration="278000" />
       <workItem from="1649272713950" duration="2558000" />
-      <workItem from="1649503168315" duration="2979000" />
+      <workItem from="1649503168315" duration="9184000" />
+      <workItem from="1649588209142" duration="3726000" />
     </task>
     <task id="LOCAL-00001" summary="adding workspace.xml">
       <created>1645027193117</created>
@@ -230,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648802170687</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Basic changes&#10;Better improvement&#10;Added new footer">
+      <created>1649506203779</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649506203779</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +257,8 @@
     <MESSAGE value="adding workspace.xml" />
     <MESSAGE value="added modal.js&#10;changes to index.php and Login.php&#10;Overall improved website performance" />
     <MESSAGE value="huge changes.&#10;fixed responsive problem&#10;fixed pagination system&#10;deleted direct pagination system&#10;fixed full url not showing in share modal" />
-    <option name="LAST_COMMIT_MESSAGE" value="huge changes.&#10;fixed responsive problem&#10;fixed pagination system&#10;deleted direct pagination system&#10;fixed full url not showing in share modal" />
+    <MESSAGE value="Basic changes&#10;Better improvement&#10;Added new footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic changes&#10;Better improvement&#10;Added new footer" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
